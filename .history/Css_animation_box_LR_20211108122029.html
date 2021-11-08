@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="boxLR.css">
+        <script>
+            var init = function(){
+                var play = document.getElementById("play");
+                var pause = document.getElementById("pause");
+                var box = document.getElementById("box");
+                play.addEventListener('click',function(){
+                    box.style.webkitAnimationPlayState = "running";
+                    box.style.animationPlayState = "running";
+                },false);
+                pause.addEventListener('click',function(){
+                    box.style.webkitAnimationPlayState = "paused";
+                    box.style.animationPlayState = "paused";
+                },false)
+            }
+        </script>
+    </head>
+    <body>
+        <div class="box" id="box"></div>
+        <button id="play">Play animation</button>
+        <button id="pause">Pause animation</button>
+        
+    </body>
+</html>
+

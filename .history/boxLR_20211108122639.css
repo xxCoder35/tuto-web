@@ -1,0 +1,58 @@
+.box{
+    background-color : rgba(58, 2, 80, 0.533);
+    position : absolute;
+    width : 0px;
+    height : 0px;
+    top : 100px;
+    border: solid;
+    border-width: 100px;
+    border-color: burlywood red blue greenyellow;
+    border-radius: 50%;
+    -webkit-animation : slide 4s linear 3s infinite alternate paused;
+    animation : slide 4s linear 3s infinite alternate paused;
+    
+    
+}
+button {
+    padding: 0.5em 1em;
+    border: 1px solid #999;
+    border-radius: 5%;
+    margin-top: 3em;
+    }
+@-webkit-keyframes slide{
+    from {
+        
+        -webkit-transform: rotate(0deg);
+        transform : rotate(0deg);
+        -ms-transform: rotate(0deg);
+    }
+    50%{
+        background-color: chartreuse;
+    }
+    to{
+       
+        -webkit-transform: rotate(180deg);
+        transform : rotate(180deg);
+        -ms-transform: rotate(180deg);
+
+        background-color: brown;
+    }
+}
+@keyframes slide{
+    from {
+      
+        -webkit-transform: rotate(0deg);
+        transform : rotate(0deg);
+        -ms-transform: rotate(0deg);
+    }
+    50%{
+        background-color: chartreuse;
+    }
+    to {
+      
+        background-color: brown;
+        -webkit-transform: rotate(180deg);
+        transform : rotate(180deg);
+        -ms-transform: rotate(180deg);
+    }
+}
