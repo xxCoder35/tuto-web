@@ -8,8 +8,9 @@
     border-width: 100px;
     border-color: burlywood red blue greenyellow;
     border-radius: 50%;
-    -webkit-animation : slide 4s linear 0s infinite alternate;
-    animation : slide 4s linear 0s infinite alternate;
+    /* name duree timingFunction delai nbExecution direction playState*/
+    -webkit-animation : slide 4s linear 3s infinite alternate paused;
+    animation : slide 4s linear 3s infinite alternate paused;
     
     
 }
